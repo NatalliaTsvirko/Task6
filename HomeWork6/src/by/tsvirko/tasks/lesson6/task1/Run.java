@@ -14,27 +14,21 @@ public class Run {
 
     public static void main(String[] args){
 
-        Jacket nikeJacket = new NikeJacket();
+        NikeJacket nikeJacket = new NikeJacket();
         Jacket adidasJacket = new AdidasJacket();
         Pants nikePants = new NikePants();
         Pants adidasPants = new AdidasPants();
         Shoes nikeShoes = new NikeShoes();
         Shoes adidasShoes = new AdidasShoes();
 
-        Person personOne = new Person( "Bob");
-        Person personTwo = new Person("Doby");
-        Person personThree = new Person("Valdemor");
-        Person personFoure = new Person("Koko" );
+        Person personOne = new Person("Bob",adidasJacket,nikePants,adidasShoes);
+        Person personTwo = new Person("Valdemor",adidasJacket,nikePants,adidasShoes);
+        Person personThree = new Person();
+        Person personFoure = new Person();
+        System.out.println(personOne.getName());
         personOne.putOn();
-        System.out.println();
         personTwo.remove();
-        personThree.remove();
-        personFoure.putOn();
-        personFoure.remove();
-
         }
-
-
 
 }
 

@@ -7,11 +7,13 @@ public class NikeShoes implements Shoes{
 
     @Override
     public void putOn() {
+        System.out.println("Надел ботинки Nike" );
 
     }
 
     @Override
     public void remove() {
+        System.out.println("Снял ботинки Nike");
 
     }
 }

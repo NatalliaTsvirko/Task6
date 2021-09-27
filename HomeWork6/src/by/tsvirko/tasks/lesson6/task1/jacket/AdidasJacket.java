@@ -6,12 +6,13 @@ public class AdidasJacket implements Jacket{
 
     @Override
     public void putOn() {
-        System.out.println(  " надел" );
+        System.out.println(" Надел куртку Адидас " );
 
     }
 
     @Override
     public void remove() {
+        System.out.println("Снял куртку Адидас ");
 
     }
 }
