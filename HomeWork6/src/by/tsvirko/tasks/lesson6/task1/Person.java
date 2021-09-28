@@ -64,6 +64,7 @@ public class Person implements IPerson {
 
     @Override
     public void putOn() {
+        System.out.println(this.name + " : ");
         jacket.putOn();
         pants.putOn();
         shoes.putOn();
@@ -71,6 +72,7 @@ public class Person implements IPerson {
 
     @Override
     public void remove() {
+        System.out.println(this.name + " : ");
         jacket.remove();
         pants.remove();
         shoes.remove();

@@ -6,7 +6,7 @@ public class AdidasJacket implements Jacket{
 
     @Override
     public void putOn() {
-        System.out.println(" Надел куртку Адидас " );
+        System.out.println("Надел куртку Адидас " );
 
     }
 

@@ -23,11 +23,16 @@ public class Run {
 
         Person personOne = new Person("Bob",adidasJacket,nikePants,adidasShoes);
         Person personTwo = new Person("Valdemor",adidasJacket,nikePants,adidasShoes);
-        Person personThree = new Person();
-        Person personFoure = new Person();
-        System.out.println(personOne.getName());
+        Person personThree = new Person("Doby",nikeJacket,adidasPants,adidasShoes);
+        Person personFoure = new Person("Valera",nikeJacket,nikePants,nikeShoes);
         personOne.putOn();
+        personOne.remove();
+        personTwo.putOn();
         personTwo.remove();
+        personThree.putOn();
+        personThree.remove();
+        personFoure.putOn();
+        personFoure.remove();
         }
 
 }
