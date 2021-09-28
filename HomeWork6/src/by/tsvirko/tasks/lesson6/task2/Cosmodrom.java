@@ -1,25 +1,43 @@
 package by.tsvirko.tasks.lesson6.task2;
 
-//public class Cosmodrom {
-//
-//    IStart iStart;
-//    public  void launching(boolean iStart){
-//
-//       if (iStart = false){
-//           System.out.println("Предстартовая проверка провалена.");
-//       }else {
-//           System.out.println("Производим запуск двигателя.");
-//       }
-//       for (int i = 10; i > 0; i--){
-//           System.out.println("Обратный отсчет " + i);
-//       }
-//
-//    }
+import java.util.Random;
 
-//    public static void main(String[] args) {
-//
-//        Shuttle shuttleFirst = new Shuttle();
-//        shuttleFirst.systemPreLaunchCheck();
-//    }
-//
-//}
+public class Cosmodrom {
+    public Cosmodrom() {
+    }
+
+    private IStart iStart;
+
+    public Cosmodrom(IStart iStart) {
+        this.iStart = iStart;
+    }
+
+    public IStart getiStart() {
+        return iStart;
+    }
+
+    public void launching(IStart iStart) {
+        if (false) {
+            System.out.println("Предстартовая проверка провалена.");
+        } else {
+            System.out.println("Производим запуск двигателя.");
+
+        }
+        int i = 1;
+        while (i <= 10) {
+            System.out.println("Обратный отсчет : " + i);
+            i++;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
